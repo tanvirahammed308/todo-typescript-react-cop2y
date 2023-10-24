@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+.App{
+  font-family: 'Caveat', cursive;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://static.vecteezy.com/system/resources/previews/003/245/520/non_2x/the-white-flowers-in-the-spring-tone-beautiful-flowers-in-nature-free-photo.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden;
+
+}
+.heading{
+  display: flex;
+  
+  align-items: center;
+  font-size: 40px;
   color: white;
-}
+  text-align: center;
+  z-index: 2;
+  margin: 30px 0;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
 
-.App-link {
-  color: #61dafb;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-icon{
+  margin-right:20pxstart;
 }

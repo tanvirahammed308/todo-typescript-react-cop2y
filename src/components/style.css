@@ -1,0 +1,83 @@
+.input-form{
+    width: 50%;
+    display: flex;
+align-items: center;
+position: relative;
+
+}
+
+.input-field{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.2s;
+    box-shadow: inset 0 0 5px black;
+}
+.input-field:focus{
+    box-shadow: 0 0 10px 1000px rgba(0,0,0,0.5);
+    outline: none;
+}
+.btn-go{
+    position: absolute ;
+    right: 0;
+    width: 50px;
+    height: 45px;
+    margin: 10px 5px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    background-color: rgb(77, 206, 84);
+    color: white;
+    transition: 0.2s;
+    box-shadow: 0 0 10px black;
+}
+.todos-list{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    
+    flex-wrap: wrap;
+    padding: 15px 0;
+   
+}
+.single-todos-form{
+    display:flex;
+    align-items: center;
+    background-image: url("https://images.unsplash.com/photo-1557683316-973673baf926?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNvbG9yfGVufDB8fDB8fHww");
+    width: 25%;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+.single-todo-text{
+    flex: 1;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+}
+.icon{
+    margin-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ----------------media query-------------- */
+@media(max-width:1200px){
+    .single-todos-form{
+        width: 40%;
+    }
+}
+@media (max-width:700px) {
+    .input-form{
+        width: 70%;
+    }
+    .todos-list{
+        width: 90%;
+    }
+    .single-todos-form{
+        width: 100%;
+    }
+    
+}
